@@ -242,7 +242,40 @@ console.log(d_ilgis);
 let e_ilgis = e.length;
 console.log(e_ilgis);
 //CIKLO FOR PANAUDOJIMAS
-//1.
+//1. 0 - 4
+let visas=0;
+for(let i=0; i<=4; i++){
+ visas = visas + i;
+}
+console.log(visas);
+// 0+1+2+3+4
+//1.c 0-100
+let visas1=0;
+for(let i=0; i<=100; i++){
+    visas1=visas1+i;
+}
+console.log(visas1);
+//1.d
+let visas2=0;
+for(let i=574; i<=815; i++){
+    visas2=visas2+i;
+}
+console.log(visas2);
+//1.e
+let visas3=0;
+for(let i=-50; i<=50; i++){
+    visas3=visas3+i;
+}
+console.log(visas3)
+//1.f
+let visas4=0;
+for(let i=-70; i<=30; i++){
+    visas4=visas4+i;
+}
+console.log(visas4);
+
+
+
 
 
 
