@@ -273,8 +273,88 @@ for(let i=-70; i<=30; i++){
     visas4=visas4+i;
 }
 console.log(visas4);
+//2.
+let tekstas = "abcdef";
+let new_tekstas = '';
+for(let i = tekstas.length -1; i>=0; i--){
+    new_tekstas = new_tekstas + tekstas[i]; 
+
+}
+
+console.log(new_tekstas);
+
+//1. tekstas.length - 1 --> 6-1 =5  kol 5  daugiau
+//arba lygu 0, naujas tekstas yra = naujas tekstas +
+//f  
+let tekstas1 = "ansajsnjscnjc";
+let naujas_tekstas = '';//susikurime nauja, i kuri desime reverse zodi
+for(i = tekstas1.length - 1; i>=0; i--){ //nuo paskutinio simbolio, vykdyt kol i daugiau/lygu uz 0
+    naujas_tekstas += tekstas1[i]; // prie naujo prideti '' + paskutini simb.
+}
+console.log(naujas_tekstas);
+
+//3.a.
+//nuo 0 iki 11 dalinasi is 3
+//is 3
+let viso = "";
+for(let i = 0; i <= 11; i++){
+    if(i % 3 ===0){
+        console.log(i);  
+        viso++;
+    }
+
+}
+
+console.log("Skaičių intervale tarp 0 ir 11, besidalinančių be liekanos iš 3 yra " +viso+ " vienetai.");
+console.log("------------------");
+
+//dalyba is 5
+let viso1 = '';
+for(let i = 0; i<= 11; i++){
+    if(i % 5 ===0){
+        console.log(i);
+        viso1++;
+    }
+}
+console.log("Skaičių intervale tarp 0 ir 11, besidalinančių be liekanos iš 5 yra " +viso1+ " vienetai.")
+
+console.log("-------");
+
+//dalyba is 7
+let viso2 ='';
+for(let i=0; i <=11; i++){
+    if(i % 7 ===0){
+        console.log(i);
+        viso2++;
+
+    }
+}
+console.log("Skaičių intervale tarp 0 ir 11, besidalinančių be liekanos iš 7 yra " +viso2+ " vienetai.")
+
+console.log("------")
+//3.b is 3
+for(let i = 8; i <= 31; i++){
+    if(i % 3 ===0){
+        console.log(i);  
+    }
+}
+console.log("--------");
+//is 5
+for(let i=8; i <=31; i++){
+    if(i % 5 === 0){
+        console.log(i);
+    }
+}
 
 
+//3.c
+//is 3 
+console.log("---------");
+for(let a=-18; a<=18; a++){
+    if(a % 3 === 0 ){
+        console.log(a);
+    }
+}
 
 
 
