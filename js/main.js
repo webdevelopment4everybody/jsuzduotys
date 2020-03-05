@@ -355,21 +355,78 @@ for(let a=-18; a<=18; a++){
         console.log(a);
     }
 }
+//FUNKCIJOS
+//1.
+function tusciaFunkcija(){
+    return(false);
+}
+console.log(tusciaFunkcija());
+//2.
+let aa = 10;
+let bb = 2;
+let sandauga = '';
+function daugyba(aa, bb){
+    sandauga = aa*bb;
+    return(sandauga);
+}
+console.log(daugyba(aa,bb));
+//3.
+let cc = 2345;
 
+function skaitmenuKiekisSkaiciuje(cc){
+    if(typeof cc !== 'number'){
+        return 'Pateikta netinkamo tipo reikšmė.';
+    }else{
+        cc = cc.toString().length;
+        cc =cc*1;
+        return(cc);
 
+    }
+    
+}
+console.log(skaitmenuKiekisSkaiciuje(cc));
 
+// let aaaa =20;
+// let bbbb = aaaa.toString();
+// console.log(bbbb.length);
+// let cc = 202442443;
+// let dd = 0;
+// if(isNaN(cc)){
+//    console.log( 'Pateikta netinkamo tipo reikšmė.');
+// }else{
+//  dd = cc.toString().length;
+ 
+//     console.log(dd);
+// }
+//4.
+// let kint=[2,3,4];
+// let largest = 0;
+// function didziausiasSkaiciusSarase(kint){
+//     if(!Array.isArray(kint)){
+//     return'Pateikta netinkamo tipo reikšmė.';
+//     }else if(kint.length === 0 ){
+//         return 'Pateiktas sąrašas negali būti tuščias.';
+//     }else{
+//         for(let i=0; i<=i+1; i++){
+//             if(kint[i] > kint[i+1]){
+//                 kint[i+1] = kint[i];
+//                 return(kint[i+1]);
+//             }
+//         }
+//     }
+// }
+// console.log(didziausiasSkaiciusSarase(kint[i]));
+console.log("-------");
 
+var kint=[1,2,3,26,30];
+var largest = 0;
 
-
-
-
-
-
-
-
-
-
-
+for(let i=0; i<=kint.legth; i++){
+    if(kint[i]>largest){
+    var largest = kint[i];
+    }
+}
+console.log(largest);
 
 
 
