@@ -399,34 +399,48 @@ console.log(skaitmenuKiekisSkaiciuje(cc));
 //     console.log(dd);
 // }
 //4.
-// let kint=[2,3,4];
-// let largest = 0;
-// function didziausiasSkaiciusSarase(kint){
-//     if(!Array.isArray(kint)){
-//     return'Pateikta netinkamo tipo reikšmė.';
-//     }else if(kint.length === 0 ){
-//         return 'Pateiktas sąrašas negali būti tuščias.';
-//     }else{
-//         for(let i=0; i<=i+1; i++){
-//             if(kint[i] > kint[i+1]){
-//                 kint[i+1] = kint[i];
-//                 return(kint[i+1]);
-//             }
-//         }
-//     }
-// }
-// console.log(didziausiasSkaiciusSarase(kint[i]));
-console.log("-------");
-
-var kint=[1,2,3,26,30];
-var largest = 0;
-
-for(let i=0; i<=kint.legth; i++){
-    if(kint[i]>largest){
-    var largest = kint[i];
+console.log("----------");
+let kint=[-1000,67,3,4,90];
+// let max = kint[0];
+function didziausiasSkaiciusSarase(arr, max){
+    max = arr[0];
+    if(!Array.isArray(arr)){
+    return'Pateikta netinkamo tipo reikšmė.';
+    }else if(arr.length === 0 ){
+        return 'Pateiktas sąrašas negali būti tuščias.';
+    }else{
+        for(let i=1; i<arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        return max;
     }
 }
-console.log(largest);
+console.log( didziausiasSkaiciusSarase( [  ] ) );
+
+// console.log(didziausiasSkaiciusSarase([1]));
+console.log("-------");
+//        0  1  2  3  4  5
+// let kint=[1];
+// let max = kint[0];
+// for(let i=1; i<kint.length; i++){
+//     if(kint[i]> max){
+//         max = kint[i];
+//         // console.log(max);
+//     }
+    
+// }
+// console.log("Didziausias skaicius yra: "+max);
 
 
 
+  // console.log(kint[i]);
+//   if(kint[i]>kint[i+1]){
+//     didziausias = kint[i];
+//     if(didziausias >)
+//     console.log("didziausias: " +didziausias);
+// }else{
+//     didziausias = kint[i+1];
+//     console.log("didziausias : " +didziausias);
+// }
