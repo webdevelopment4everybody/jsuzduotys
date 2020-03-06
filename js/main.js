@@ -362,14 +362,32 @@ function tusciaFunkcija(){
 }
 console.log(tusciaFunkcija());
 //2.
-let aa = 10;
-let bb = 2;
-let sandauga = '';
-function daugyba(aa, bb){
-    sandauga = aa*bb;
-    return(sandauga);
+let skiacius1= 10;
+let skaicius2 = 2;
+function daugyba(num1, num2){
+    if(typeof (num1) !== 'number'){
+        console.error('ERROR:netinkamo tipo reiksme!(1)');
+    }
+    if(num1 === Infinity || num1 === -Infinity){
+        console.error('ERROR:negalima operacija su begalybe(1)');
+    }
+    if(num2 === Infinity || num2 === -Infinity){
+        console.error('ERROR:negalima operacija su begalybe(2)');
+    }
+    if( '' +num1 === 'NaN' || '' +num2 === 'NaN'){
+        console.error('ERROR:negalima operacija su NaN');
+    }
+
+    if(typeof (num2) !== 'number'){
+        console.error('ERROR:netinkamo tipo reiksme!(2)');
+        
+    }
+    const answer = num1*num2;
+    return console.log(answer);
 }
-console.log(daugyba(aa,bb));
+daugyba(skaicius1, skaicius2);
+daugyba(2, NaN);
+daugyba(Infinity, 30);
 //3.
 let cc = 2345;
 
