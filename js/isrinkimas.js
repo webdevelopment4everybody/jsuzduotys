@@ -43,13 +43,13 @@ function isrinktiRaides(text, letter){
     }
     return answer;
 }
-// isrinktiRaides( 'nsjncjibsndsjcndincehdnhcijwdnbcjisncjinjncjdincijbvibfvhiebvhifbvhebvivbhevbihbeihbefvibeiwdqdwkmcwkofvmjn', 2 );
-// isrinktiRaides( 'abcdefghijkl', -1 );
-// isrinktiRaides( 'abc', 0 );
+isrinktiRaides( 'nsjncjibsndsjcndincehdnhcijwdnbcjisncjinjncjdincijbvibfvhiebvhifbvhebvivbhevbihbeihbefvibeiwdqdwkmcwkofvmjn', 2 );
+isrinktiRaides( 'abcdefghijkl', -1 );
+isrinktiRaides( 'abc', 0 );
 console.log(isrinktiRaides( 'abcdefg', 2));
-// isrinktiRaides( 1561, 2 );
-// isrinktiRaides( "", 2 );
-// isrinktiRaides( '156', '2' );
-// isrinktiRaides( "abc", Infinity );
-// isrinktiRaides( "abc", NaN );
-// isrinktiRaides( "abcdjbshbsivd", 3.17 );
+isrinktiRaides( 1561, 2 );
+isrinktiRaides( "", 2 );
+isrinktiRaides( '156', '2' );
+isrinktiRaides( "abc", Infinity );
+isrinktiRaides( "abc", NaN );
+isrinktiRaides( "abcdjbshbsivd", 3.17 );
