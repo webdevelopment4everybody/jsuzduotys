@@ -19,8 +19,6 @@ console.log(dalyba(10,5));//2
 console.log(dalyba(true, 3));
 console.log(dalyba('',5));
 
-
-
 console.log(dalyba(NaN, 3));
 console.log(dalyba(10, [1,4,7]));
 console.log(dalyba(4, 0));
