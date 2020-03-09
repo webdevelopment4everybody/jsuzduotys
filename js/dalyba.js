@@ -30,6 +30,9 @@ console.log(dalyba(10.5,5));
 console.log(dalyba(-90, -3));
 console.log(dalyba(-Infinity,5));
 console.log(dalyba(100, -Infinity));
+console.log(dalyba(100, 'undefined'));
+console.log(dalyba(100, null));
+console.log(dalyba(null, -Infinity));
 
 
 
