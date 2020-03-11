@@ -6,23 +6,19 @@
 //Jeigu skaicius yra be kablelio
 //atspausdiname i console "Skaiciu po kablelio nera"
 
-let skaicius = 122.2937424;
-if(typeof (skaicius) !== 'number'){ 
-    console.log('ERROR')
-} 
-if(Number.isInteger(skaicius)){
-    console.log("Skaiciu po kablelio nera");
-}else{
-skaicius = skaicius.toString();
-skaicius1 = skaicius.indexOf('.');
-let skaic_po_kab = skaicius.substr(skaicius1+1, skaicius.length);
-let kiekis = skaic_po_kab.length;
-console.log('Skaiciu po kablelio: '+kiekis+ ', jie yra: ' +skaic_po_kab);
-}
-
-
-
-
+// let skaicius = 122.2937424;
+// if(typeof (skaicius) !== 'number'){ 
+//     console.log('ERROR')
+// } 
+// if(Number.isInteger(skaicius)){
+//     console.log("Skaiciu po kablelio nera");
+// }else{
+// skaicius = skaicius.toString();
+// skaicius1 = skaicius.indexOf('.');
+// let skaic_po_kab = skaicius.substr(skaicius1+1, skaicius.length);
+// let kiekis = skaic_po_kab.length;
+// console.log('Skaiciu po kablelio: '+kiekis+ ', jie yra: ' +skaic_po_kab);
+// }
 // Rezultatas console:
 // Skaiciu po kablelio: 9, jie yra: 235346547
 
@@ -31,6 +27,37 @@ console.log('Skaiciu po kablelio: '+kiekis+ ', jie yra: ' +skaic_po_kab);
 //atspausdinti visus lyginius skaicius
 
 let ilgasSkaicius = 1827563928374812;
+ilgasSkaicius = ilgasSkaicius.toString();
+console.log(ilgasSkaicius.length);
+ilgasSkaicius = ilgasSkaicius.split('');
+console.log(ilgasSkaicius);
+
+
+for(let i=0; i<ilgasSkaicius.length; i++){
+    if(ilgasSkaicius[i] % 2 ===0){
+        console.log(ilgasSkaicius[i]);
+    }
+}
+
+
+
+// let skaicius = 13.743534654;
+// let iStringa = skaicius.toString();
+// let ilgis = iStringa.length;
+// let randameTaska = iStringa.indexOf(".");
+// let a = iStringa.split('');
+// console.log(a);
+// let join = '';
+
+// poTasko = randameTaska+1;
+
+// for (let i = randameTaska+1; i <= ilgis-1; i++){
+//     console.log(a[i]);
+//     join = i.join('');
+    
+
+// }
+
 
 // Rezultatas console:
 // 8
@@ -43,12 +70,23 @@ let ilgasSkaicius = 1827563928374812;
 // 2
 // 3. Parasyti koda, kuris atspausdintu zemiau matoma sablona (OPTIONAL)
 // Su ciklu, galima be IF
-// *
-// * *
-// * * *
-// * * * *
+// * 1
+// * * 1 2
+// * * * 1 2 3 
+// * * * * 1 2 3 4 
 // * * * * *
 
+let a = '*';
+let stars = '';
+for(let i=1; i<=5; i++){
+    stars +=a;
+    console.log(stars); 
+}
+
+
+// *=*+1
+// i=1->*
+// i=2 ->**
 // 1. Parasyti koda, kuris apdorotu masyva ir atspausdintu N elementu
 // A var. Spausdina N elementu is masyvo pradzios
 // B var. Spausdina N elementu is masyvo galo
