@@ -83,15 +83,32 @@ for(let i=1; i<=5; i++){
     console.log(stars); 
 }
 
-
-// *=*+1
-// i=1->*
-// i=2 ->**
 // 1. Parasyti koda, kuris apdorotu masyva ir atspausdintu N elementu
 // A var. Spausdina N elementu is masyvo pradzios
 // B var. Spausdina N elementu is masyvo galo
 
 let skaiciuMasyvas = [1,6,7,2,4,63,23,4,6,74,2];
+
+// console.log(skaiciuMasyvas.length-1);
+
+let n=5;
+for(let i=0; i<n; i++){
+    let kzk = skaiciuMasyvas[i]; 
+    console.log(kzk);
+}
+console.log('-------------');
+
+
+for(let i=skaiciuMasyvas.length-1; i>skaiciuMasyvas.length -1- n; i--){
+    let kzk = skaiciuMasyvas[i]; 
+    console.log(kzk);
+}
+
+
+// for(let i=skaiciuMasyvas.length-1; i>skaiciuMasyvas.length; i--){
+//     let masyvas = skaiciuMasyvas[i]; 
+//     console.log(masyvas);
+// }
 
 // 2. Turime tekstine eilute su srifto dydziais. Reikia paimti kiekviena dydi ir sukonvertuoti i REM, kiekvieno skaiciavimo rezultata atspausdinti atskiroje eiluteje.
 
