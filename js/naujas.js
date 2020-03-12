@@ -105,12 +105,9 @@ for(let i=skaiciuMasyvas.length-1; i>skaiciuMasyvas.length -1- n; i--){
 }
 
 
-// for(let i=skaiciuMasyvas.length-1; i>skaiciuMasyvas.length; i--){
-//     let masyvas = skaiciuMasyvas[i]; 
-//     console.log(masyvas);
-// }
 
-// 2. Turime tekstine eilute su srifto dydziais. Reikia paimti kiekviena dydi ir sukonvertuoti i REM, kiekvieno skaiciavimo rezultata atspausdinti atskiroje eiluteje.
+// 2. Turime tekstine eilute su srifto dydziais. Reikia paimti kiekviena dydi ir
+// sukonvertuoti i REM, kiekvieno skaiciavimo rezultata atspausdinti atskiroje eiluteje.
 
 //Var. A zingsniai:
 //Pasidaryti masyva is teksto
@@ -118,9 +115,31 @@ for(let i=skaiciuMasyvas.length-1; i>skaiciuMasyvas.length -1- n; i--){
 //Iteracijos metu atlikti skaiciavimus
 //Iteracijos metu atspausdinti skaiciavimu rezultata
 
-let fontSizes = "14,16,18,30,1,2,3,4,5";
+// let fontSizes = "14,16,18,30,1,2,3,4,5";
+
+// fontSizes = fontSizes.split(',');
+// console.log(fontSizes);
+// let naujas = '';
+// for(let i=0; i < fontSizes.length; i++){
+//     naujas = fontSizes[i]/16;
+//     console.log(naujas+'rem'); 
+// }
+
 //b var (sunkiau) :
-//let fontSizes = "14px, 16px, 18px, 30px";
+let naujas = '';
+let fontSizes = "14px, 16px, 18px, 30px";
+fontSizes = fontSizes.split('px,');
+
+console.log(fontSizes);
+
+for(let i=0; i < fontSizes.length; i++){
+    naujas = fontSizes[i];
+    let aka = parseInt(naujas,10);
+    console.log((aka/16)+'rem'); 
+}
+
+
+
 
 //Rezultatas matomas console:
 //14px = 0.875rem
