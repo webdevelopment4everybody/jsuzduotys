@@ -172,6 +172,7 @@ let bigNumber = 3400659283700220;
 bigNumber = bigNumber.toString();
 let visas='';
 lalaa=0;
+
 for(let i =0; i< bigNumber.length; i++){  
     let lalaa = bigNumber[i];
     // console.log(lalaa)
@@ -180,6 +181,7 @@ for(let i =0; i< bigNumber.length; i++){
     
     if((bigNumber[i] % 2 ===0 && bigNumber[i] !== '0') && (bigNumber[i+1] % 2===0 && bigNumber[i] !=='0' )){
         visas+=lalaa+'-';
+
         
     }else{
         visas +=lalaa;
@@ -189,17 +191,45 @@ for(let i =0; i< bigNumber.length; i++){
 }
 console.log(visas);
 
-
-
-
-
-
 // 4. Surasti ir atspausdinti ilgiausia zodi tekstineje eiluteje
 // Reikes kintamojo ilgiausio zodzio saugojimui
 // Rezultatas:
 // Ilgiausias zodis yra: tekstineje
 
-let sentence = "Surasti ilgiausia zodi tekstineje eiluteje";
+let sentence = "Surasti ilgiausia zodi tekstineje eiluteje lajjsnxsjinxiodwnciwon";
+
+let ilgiausiasZodis = '';
+sentence=sentence.split(' ');
+// console.log(sentence);
+
+
+for(let i=0; i<sentence.length; i++){
+    for(let k=i+1; k<sentence.length;k++){
+    ilgiausiasZodis = sentence[i];
+    // console.log(sentence[i]);
+    if(sentence[i].length > sentence[k].length){
+        ilgiausiasZodis = sentence[i];
+        // console.log(ilgiausiasZodis);
+    }    else{
+        ilgiausiasZodis = sentence[k];
+    }
+    }
+}
+console.log(ilgiausiasZodis);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 5. Atspausdinti kiekviena tekstines eilutes zodi,
 // kuris yra ilgesnis uz pries tai buvusi zodi.
