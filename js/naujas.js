@@ -152,7 +152,47 @@ for(let i=0; i < fontSizes.length; i++){
 // 34-6592-8370-0-2-2-0
 // B var. padaryti kad tarp 0 nebutu bruksneliu
 
-let bigNumber = 34659283700220;
+// let bigNumber = 34659283700220;
+// bigNumber = bigNumber.toString();
+// let visas='';
+// lalaa=0;
+// for(let i =0; i< bigNumber.length; i++){  
+//     let lalaa = bigNumber[i];
+//     if(bigNumber[i] % 2 ===0 && bigNumber[i+1]% 2===0){
+//         visas+=lalaa+'-';
+//         // console.log(visas+=lalaa+'-');
+//     }else{
+//         visas +=lalaa;
+//         // console.log(visas+=lalaa);
+//     }
+// }
+// console.log(visas);
+//b variantas
+let bigNumber = 3400659283700220;
+bigNumber = bigNumber.toString();
+let visas='';
+lalaa=0;
+for(let i =0; i< bigNumber.length; i++){  
+    let lalaa = bigNumber[i];
+    // console.log(lalaa)
+      
+
+    
+    if((bigNumber[i] % 2 ===0 && bigNumber[i] !== '0') && (bigNumber[i+1] % 2===0 && bigNumber[i] !=='0' )){
+        visas+=lalaa+'-';
+        
+    }else{
+        visas +=lalaa;
+        // console.log(visas+=lalaa);
+    }
+    
+}
+console.log(visas);
+
+
+
+
+
 
 // 4. Surasti ir atspausdinti ilgiausia zodi tekstineje eiluteje
 // Reikes kintamojo ilgiausio zodzio saugojimui
